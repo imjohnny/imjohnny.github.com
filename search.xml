@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[为什么你要写博客]]></title>
+      <url>https://imjohnny.github.io/2016/05/25/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<h1 id="为什么我要写博客？"><a href="#为什么我要写博客？" class="headerlink" title="为什么我要写博客？"></a>为什么我要写博客？</h1><p><img src="/uploads/write.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>https://imjohnny.github.io/2016/05/04/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
