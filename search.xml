@@ -7,8 +7,8 @@
       <title><![CDATA[Javascript学习笔记 Day1]]></title>
       <url>https://imjohnny.github.io/2016/05/25/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day1/</url>
       <content type="html"><![CDATA[<p><img src="/uploads/learn.jpg" alt=""></p>
-<h2 id="前端三架马车之Javascript"><a href="#前端三架马车之Javascript" class="headerlink" title="前端三架马车之Javascript"></a>前端三架马车之Javascript</h2><p>一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。</p>
-<h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>###1、浏览器里面的javascript是干什么的？###</p>
+<h2 id="前端三架马车之Javascript"><a href="#前端三架马车之Javascript" class="headerlink" title="前端三架马车之Javascript"></a>前端三架马车之Javascript</h2><p>一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。<br><a id="more"></a></p>
+<h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>1、浏览器里面的javascript是干什么的？</p>
 <p>通俗点说其实就是实现浏览器的一些功能，最主要的就是修改样式，而且修改的还是行间样式。</p>
 <p>2、再来说说一直说的事件，简单点就是用户的操作，像鼠标的点击、滑入、滑出等等。<br>onclick/onmouseover/onmouseout/onmousemove/…</p>
 <p>3、alert也是很有用的一个函数，暂停后续代码的执行，等待用户的确认，用于代码调试。</p>
