@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title><![CDATA[Javascript学习笔记-Day2]]></title>
+      <url>https://imjohnny.github.io/2016/05/26/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day2/</url>
+      <content type="html"><![CDATA[<h2 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h2><p>今天我们来讨论一下js里面的基本数据类型，变量还有函数。<br>1、JS里面的基本数据类型</p>
+<ul>
+<li>字符串String，被引号包着的就是字符。</li>
+<li>数字Number，能够参与数学运算。</li>
+<li>布尔Boolean，true or false</li>
+</ul>
+<p>2、变量出现的地方，就和值（内容本身）出现是一样的。<br><strong>变量和字符的区别：加了引号就是字符，不加就是变量</strong><br>变量需要先定义再使用，变量的值，以使用时为准。<br><a id="more"></a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript学习笔记 Day1]]></title>
       <url>https://imjohnny.github.io/2016/05/25/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day1/</url>
       <content type="html"><![CDATA[<p><img src="/uploads/learn.jpg" alt=""></p>
