@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>https://imjohnny.github.io/2016/05/26/%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</loc>
+    <lastmod>2016-05-26T16:36:56.264Z</lastmod>
+    <data>
+        <display>
+        <title>关于数组去重</title>
+        <pubTime>2016-05-26T13:14:52.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+        <tag>Array</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javascript" url="https://imjohnny.github.io/categories/Javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://imjohnny.github.io/2016/05/26/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day2/</loc>
+    <lastmod>2016-05-26T08:41:06.817Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript学习笔记-Day2</title>
+        <pubTime>2016-05-26T05:30:49.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="https://imjohnny.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://imjohnny.github.io/2016/05/25/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day1/</loc>
+    <lastmod>2016-05-25T13:34:48.759Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript学习笔记 Day1</title>
+        <pubTime>2016-05-25T13:17:33.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="https://imjohnny.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://imjohnny.github.io/2016/05/25/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2016-05-25T12:50:40.970Z</lastmod>
+    <data>
+        <display>
+        <title>为什么你要写博客</title>
+        <pubTime>2016-05-25T04:02:56.000Z</pubTime>
+        
+        <tag>想到就写</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://imjohnny.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://imjohnny.github.io/2016/05/04/hello-world/</loc>
+    <lastmod>2016-05-04T15:38:06.592Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-05-04T14:12:22.579Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
