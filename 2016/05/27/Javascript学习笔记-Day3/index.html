@@ -100,18 +100,18 @@
 
 
 
-<meta name="description" content="前端三架马车之Javascript一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。">
+<meta name="description" content="Day3我觉得写原生JS的很多效果，选项卡Tab是个非常重要的基础内容。很多其他复杂的效果其实都和选项卡的思路类似或者接近。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript学习笔记 Day1">
-<meta property="og:url" content="https://imjohnny.github.io/2016/05/25/Javascript学习笔记-Day1/index.html">
+<meta property="og:title" content="Javascript学习笔记-Day3">
+<meta property="og:url" content="https://imjohnny.github.io/2016/05/27/Javascript学习笔记-Day3/index.html">
 <meta property="og:site_name" content="Johnny's NoteBook">
-<meta property="og:description" content="前端三架马车之Javascript一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。">
-<meta property="og:image" content="https://imjohnny.github.io/uploads/learn.jpg">
-<meta property="og:updated_time" content="2016-05-25T13:34:48.759Z">
+<meta property="og:description" content="Day3我觉得写原生JS的很多效果，选项卡Tab是个非常重要的基础内容。很多其他复杂的效果其实都和选项卡的思路类似或者接近。">
+<meta property="og:image" content="https://imjohnny.github.io/uploads/learnDay3.jpg">
+<meta property="og:updated_time" content="2016-05-27T15:40:41.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript学习笔记 Day1">
-<meta name="twitter:description" content="前端三架马车之Javascript一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。">
-<meta name="twitter:image" content="https://imjohnny.github.io/uploads/learn.jpg">
+<meta name="twitter:title" content="Javascript学习笔记-Day3">
+<meta name="twitter:description" content="Day3我觉得写原生JS的很多效果，选项卡Tab是个非常重要的基础内容。很多其他复杂的效果其实都和选项卡的思路类似或者接近。">
+<meta name="twitter:image" content="https://imjohnny.github.io/uploads/learnDay3.jpg">
 
 
 
@@ -129,7 +129,7 @@
   };
 </script>
 
-  <title> Javascript学习笔记 Day1 | Johnny's NoteBook </title>
+  <title> Javascript学习笔记-Day3 | Johnny's NoteBook </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -292,7 +292,7 @@
             
             
               
-                Javascript学习笔记 Day1
+                Javascript学习笔记-Day3
               
             
           </h1>
@@ -304,8 +304,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-25T21:17:33+08:00" content="2016-05-25">
-              2016-05-25
+            <time itemprop="dateCreated" datetime="2016-05-27T22:36:47+08:00" content="2016-05-27">
+              2016-05-27
             </time>
           </span>
 
@@ -334,8 +334,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/25/Javascript学习笔记-Day1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/25/Javascript学习笔记-Day1/" itemprop="commentsCount"></span>
+                <a href="/2016/05/27/Javascript学习笔记-Day3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/Javascript学习笔记-Day3/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -358,27 +358,24 @@
       
 
       
-        <p><img src="/uploads/learn.jpg" alt=""></p>
-<h2 id="前端三架马车之Javascript"><a href="#前端三架马车之Javascript" class="headerlink" title="前端三架马车之Javascript"></a>前端三架马车之Javascript</h2><p>一直以来学习JS总是断断续续，用到了啃一块，没有一个系统的学习过程。今年3月份的时候，打算完整的学习一下，给自己充一下电。所以就有了下面的一系列的学习笔记。<br><a id="more"></a></p>
-<h2 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h2><p>1、浏览器里面的javascript是干什么的？</p>
-<p>通俗点说其实就是实现浏览器的一些功能，最主要的就是修改样式，而且修改的还是行间样式。</p>
-<p>2、再来说说一直说的事件，简单点就是用户的操作，像鼠标的点击、滑入、滑出等等。<br>onclick/onmouseover/onmouseout/onmousemove/…</p>
-<p>3、alert也是很有用的一个函数，暂停后续代码的执行，等待用户的确认，用于代码调试。</p>
-<p>4、js常用的自然就是抓取对象了<br>document指的文档，也就是整个页面，document.getElementById(‘id属性名’);<br>eg：document.getElementById(‘div1′).style.display=’none’;</p>
-<p>5、关于单引号还是双引号的问题<br>一般我是在html结构里面使用双引号，js里面使用单引号，当然双引号和单引号都是可以通用的，只要不是一单一双使用就可以喽，<br>另外注意单双内外错开使用。</p>
-<p>6、对于JS来说，任何元素都可以添加事件，任何CSS属性都可以修改。<br>html属性名=值<br>就算是link标签也可以给id属性</p>
-<p>7、什么是函数？</p>
+        <p><img src="/uploads/learnDay3.jpg" alt=""><br>Day3<br>我觉得写原生JS的很多效果，选项卡Tab是个非常重要的基础内容。很多其他复杂的效果其实都和选项卡的思路类似或者接近。<br><a id="more"></a></p>
+<h2 id="1-选项卡"><a href="#1-选项卡" class="headerlink" title="1.选项卡"></a>1.选项卡</h2><p>说到选项卡，自然就要用到事件，那搞清楚this就显的非常重要了。在选项卡事件函数里面this表示你点到的元素（代表事件发生在谁的头上，this就指向谁）。<br>还有JS的自定义属性，比如<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.index=<span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p>JS的自定义属性存在于JS的内部，和HTML没有半毛钱的关系。<br>如果用一句话来概括选项卡的思路那就是<strong>“干掉所有，点亮自己”</strong>。<br>HTML结构：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><br><span class="line">.tab div&#123;width:100px; height:100px; margin-top:10px; background:#333; display:none; border-radius: 5px; color: #fff; line-height: 100px; font-size: 3rem; text-align: center;&#125;</span><br><span class="line">.tab .active&#123;background:yellow;&#125;</span><br><span class="line">.tab .current&#123;display:block;&#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tab"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"电影"</span> <span class="attr">class</span>=<span class="string">"active"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"综艺"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"纪录片"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"current"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>封装tab和showTab函数来处理多个选项卡。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	tab(<span class="string">'tab'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">tab</span>(<span class="params">sClass</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> aDiv=<span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;aDiv.length;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(aDiv[i].className==sClass)&#123;</span><br><span class="line">			showTab(aDiv[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//处理tab函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showTab</span>(<span class="params">oDiv</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> aDiv=oDiv.getElementsByTagName(<span class="string">'div'</span>);</span><br><span class="line">	<span class="keyword">var</span> aIpt=oDiv.getElementsByTagName(<span class="string">'input'</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;aIpt.length;i++)&#123;</span><br><span class="line">		aIpt[i].index=i;<span class="comment">//使用自定义属性，发索引</span></span><br><span class="line">		aIpt[i].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;aIpt.length;i++)&#123;</span><br><span class="line">				aIpt[i].className=<span class="string">''</span>;</span><br><span class="line">				aDiv[i].className=<span class="string">''</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">this</span>.className=<span class="string">'active'</span>;</span><br><span class="line">			aDiv[<span class="keyword">this</span>.index].className=<span class="string">'current'</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-什么是封装？"><a href="#2-什么是封装？" class="headerlink" title="2.什么是封装？"></a>2.什么是封装？</h2><p>封装就是把具有某种功能的代码块放到函数里面，重复使用。</p>
+<h2 id="3-innerHTML"><a href="#3-innerHTML" class="headerlink" title="3.innerHTML"></a>3.innerHTML</h2><p>innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML。</p>
+<h2 id="4-关于循环当中i的问题"><a href="#4-关于循环当中i的问题" class="headerlink" title="4.关于循环当中i的问题"></a>4.关于循环当中i的问题</h2><p>当循环结束时，循环当中的i其实已经变成了length。因为计算机的执行速度很快，循环是在一瞬间完成的。<br>建议不要在事件函数内直接使用i来做对象的索引，可以使用自定义属性来代替。</p>
+<h2 id="5-JS当中的数据类型"><a href="#5-JS当中的数据类型" class="headerlink" title="5.JS当中的数据类型"></a>5.JS当中的数据类型</h2><p>typeof 数据 –&gt; 返回数据的数据类型<br>null –&gt; 空对象</p>
+<p>所有常见数据类型：</p>
 <ul>
-<li>函数就是包了一堆代码的代码块</li>
-<li>函数申明的基本写法： function 函数名(){JS代码}</li>
-<li>函数名()就是调用，函数名注意不要重名会引起冲突，定义了函数以后，不调用，函数里面的代码就不会执行。</li>
-<li>函数如果没有定义，但是调用了就会报错…not defined</li>
-<li>函数可以一次定义，多次调用，非常方便。</li>
+<li>number（NaN）数字</li>
+<li>string 字符串</li>
+<li>boolean 布尔值</li>
+<li>object（null） 对象</li>
+<li>undefined 未定义</li>
+<li>function 函数 很多人觉得函数是一种数据类型，但是也有很多人觉得函数是对象的一种。</li>
 </ul>
-<p>8、什么是变量？<br>变量就是一个别名，用来存放数据的。<br>var 变量名=值<br>变量使用非常的方便，可以减少代码的体积并且便于修改。</p>
-<p>9、关于错误<br>xxx of null 对象抓取失败<br>xxx not defined 没定义(变量没有，搞了一个a变量，用的b)</p>
-<p>10、关于class和style<br>元素.className=值<br>style获取和修改的都是行间样式<br>元素.style.属性名=值; 修改 | 元素.style.属性名; 获取<br>对于同一个元素，不要同时使用class和style，尽量可以使用class。JS直接添加删除就可以完成效果了。</p>
-<p>11、CSS优先级 浏览器默认&lt;标签属性&lt;*&lt;tagname&lt;class&lt;id&lt;style&lt;important</p>
+<p>基本数据类型：number string boolean undefined<br>复合数据类型：object</p>
 
       
     </div>
@@ -409,17 +406,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/25/为什么你要写博客/" rel="next" title="为什么你要写博客">
-                <i class="fa fa-chevron-left"></i> 为什么你要写博客
+              <a href="/2016/05/26/关于数组去重/" rel="next" title="关于数组去重">
+                <i class="fa fa-chevron-left"></i> 关于数组去重
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/26/Javascript学习笔记-Day2/" rel="prev" title="Javascript学习笔记-Day2">
-                Javascript学习笔记-Day2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -468,8 +461,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/25/Javascript学习笔记-Day1/"
-           data-title="Javascript学习笔记 Day1" data-url="https://imjohnny.github.io/2016/05/25/Javascript学习笔记-Day1/">
+      <div class="ds-thread" data-thread-key="2016/05/27/Javascript学习笔记-Day3/"
+           data-title="Javascript学习笔记-Day3" data-url="https://imjohnny.github.io/2016/05/27/Javascript学习笔记-Day3/">
       </div>
     
   </div>
@@ -587,7 +580,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前端三架马车之Javascript"><span class="nav-text">前端三架马车之Javascript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day1"><span class="nav-text">Day1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-选项卡"><span class="nav-text">1.选项卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-什么是封装？"><span class="nav-text">2.什么是封装？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-innerHTML"><span class="nav-text">3.innerHTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-关于循环当中i的问题"><span class="nav-text">4.关于循环当中i的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-JS当中的数据类型"><span class="nav-text">5.JS当中的数据类型</span></a></li></ol></div>
             
           </div>
         </section>
