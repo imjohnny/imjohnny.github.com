@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[关于prototype、原型链和继承的关系]]></title>
+      <url>https://imjohnny.github.io/2016/05/28/%E5%85%B3%E4%BA%8Eprototype%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%92%8C%E7%BB%A7%E6%89%BF%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+      <content type="html"><![CDATA[<p>我觉得搞懂prototype、原型链和继承的关系，对精通和掌握Javascript这门语言是非常重要的。<br><img src="/uploads/prototype.jpg" alt=""><br><a id="more"></a></p>
+<h2 id="1-到底什么是原型？"><a href="#1-到底什么是原型？" class="headerlink" title="1.到底什么是原型？"></a>1.到底什么是原型？</h2><p>在Javascript权威指南上面有这样一段定义：</p>
+<blockquote>
+<p>一个对象的原型就是它的构造函数的prototype的值。所有的函数都有一个prototype属性，当这个函数被定义时，prototype属性自动创建和初始化。prototype属性的初始化值是一个对象，这个对象只带有一个属性。这个属性名为constructor，它指向和原型相关联的那个构造函数。</p>
+</blockquote>
+<p>通俗的讲原型就是prototype是函数的一个属性，每个函数都有一个prototype属性，可以通过原型去改写对象下面公用的方法和属性，让公用的方法或者属性在内存中存在一份，提高性能。所以原型对象的用途是为每个实例对象存储共享的方法和属性，它仅仅是一个普通对象而已。并且所有的实例是共享同一个原型对象，因此有别于实例方法或属性，原型对象仅有一份。</p>
+<h2 id="2-prototype，-proto-和原型链"><a href="#2-prototype，-proto-和原型链" class="headerlink" title="2.prototype，__proto__和原型链"></a>2.prototype，__proto__和原型链</h2><p>前面提到过，prototype是函数的一个内置属性，__proto__则是对象的内置属性（指针）。<br>__proto__是JS内部使用寻找原型链的属性。<br><strong>特别需要注意的是：只有函数才有prototype属性，普通对象是没有prototype属性的。</strong><br><strong>但所有的对象都有__proto__属性</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</span><br><span class="line"><span class="comment">/*new的过程拆分成以下三步：</span><br><span class="line">(1) var p=&#123;&#125;; 也就是说，初始化一个对象p</span><br><span class="line">(2) p.__proto__ = Person.prototype;</span><br><span class="line">(3) Person.call(p); 也就是说构造p，也可以称之为初始化p*/</span></span><br><span class="line">alert(p.__proto__ === Person.prototype);<span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="/uploads/prototype2.jpg" alt=""><br>如上图，在js中，对象在调用一个方法时会首先在自身里寻找是否有该方法，若没有，则去原型链上去寻找，依次层层递进，直到Object.__proto__=null为止，这里的原型链就是实例对象的proto属性，而这样一层层往上追溯，一环扣一环，就是原型链了。</p>
+<h2 id="3-继承"><a href="#3-继承" class="headerlink" title="3.继承"></a>3.继承</h2><p>在传统面向对象的语言中，有两个非常重要的概念 - 类和实例。 类定义了一类事物公共的行为和方法；而实例则是类的一个具体实现。 另外，面向对象编程有三个重要的概念 - 封装、继承和多态。</p>
+<p>但是在JavaScript的世界中，所有的这一切特性似乎都不存在。 因为JavaScript本身不是面向对象的语言，而是基于对象的语言。 这里面就有一些有趣的特性，比如JavaScript中所有事物都是对象， 包括字符串、数组、日期、数字，甚至是函数。</p>
+<p>其实当初网景公司的工程师Brendan Eich觉得没有必要把这门语言搞得和C++，Java那么复杂。不过他还是受到了当时思想的影响，Javascript一切皆对象。他引入了new关键字，后面跟构造函数来继承，但是有一个缺点就是无法共享属性和方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Person(name)&#123;</span><br><span class="line">	this.name=name;</span><br><span class="line">	this.species=&apos;human&apos;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var man = new Person(&apos;John&apos;);</span><br><span class="line">var woman = new Person(&apos;Alice&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>用了new关键字后，每一个实例对象，都有自己的属性和方法的副本。这不仅无法做到数据共享，也是极大的内存资源浪费,1994的硬件条件，你懂的~<br>考虑到这一点，Brendan Eich决定为构造函数设置一个prototype属性。所有实例对象需要共享的属性和方法，都放在这个对象里面；那些不需要共享的属性和方法，就放在构造函数里面。<br>就这样大神花了10天时间…就定下了Javascript基于原型的继承机制。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript学习笔记-Day3]]></title>
       <url>https://imjohnny.github.io/2016/05/27/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day3/</url>
       <content type="html"><![CDATA[<p><img src="/uploads/learnDay3.jpg" alt=""><br>Day3<br>我觉得写原生JS的很多效果，选项卡Tab是个非常重要的基础内容。很多其他复杂的效果其实都和选项卡的思路类似或者接近。<br><a id="more"></a></p>
