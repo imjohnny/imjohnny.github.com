@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双色球选号</title>
+<style>
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+
+#container{width: 500px; height: 110px; position: absolute; left: 50%; top: 50%; margin-left:-250px; margin-top: -55px; border: 1px solid #ccc; -webkit-box-shadow:1px 1px 2px 2px #ccc; }
+.wrapper{width: 380px; height: 44px; overflow: hidden; margin-top: 20px;}
+.wrapper li{width: 40px; height: 40px; border-radius: 50%; border: 2px solid #ff4b4b; float: left; margin-left: 10px; line-height: 40px; text-align: center; font-family: verdana; font-weight: bold;;}
+.wrapper li:nth-of-type(7){border: 2px solid #4fa9f5;}
+#start{position: absolute; top:20px; right: 30px; width: 40px; height: 40px; cursor: pointer;}
+</style>
+<script>
+window.onload=function(){
+	var oContainer=document.getElementById('container');
+	var oUl=getByClass(oContainer,'wrapper')[0];
+	var aLi=oUl.children;
+	var oBtn=document.getElementById('start');
+
+	start();
+	oBtn.onclick=start;
+
+	function start(){
+		var result=randomBall();
+		for(var i=0;i<aLi.length;i++){
+			aLi[i].innerHTML=result[i];
+		}
+	};
+
+	function randomBall(){
+		var array=[];
+		var i=0;
+		while(array.length<6){
+			var num=fixZero(rnd(1,34));
+			if(!findInArr(num,array)){
+				array.push(num);
+			}
+		}
+		array.push(fixZero(rnd(1,17)));//添加蓝球号码
+		return array;
+	}
+}
+//获取随机整数
+function rnd(n,m){
+	return parseInt(n+Math.random()*(m-n));
+};
+//数组查找函数
+function findInArr(n,arr){
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]==n){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+};
+//前导零添加
+function fixZero(n){
+	return n<10? '0'+n:''+n;
+};
+//正则选取类名对象 无法选取类似-box-类名
+function getByClass(oParent,sClass){
+	var aEle=oParent.getElementsByTagName('*');
+	var result=[];//结果数组
+
+	var re=new RegExp('\\b'+sClass+'\\b');//使用单词边界 注意类似-box-类名
+
+	for(var i=0;i<aEle.length;i++){
+		if(re.test(aEle[i].className)){
+			result.push(aEle[i]);
+		}
+	}
+
+	return result;
+}
+</script>
+</head>
+<body>
+<div id="container">
+	<ul class="wrapper">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<button id="start">生成号码</button>
+</div>	
+</body>
+</html>
