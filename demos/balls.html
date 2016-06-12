@@ -25,6 +25,7 @@ window.onload=function(){
 
 	function start(){
 		var result=randomBall();
+		//console.log(result);
 		for(var i=0;i<aLi.length;i++){
 			aLi[i].innerHTML=result[i];
 		}
@@ -53,10 +54,8 @@ function findInArr(n,arr){
 		if(arr[i]==n){
 			return true;
 		}
-		else{
-			return false;
-		}
 	}
+	return false;
 };
 //前导零添加
 function fixZero(n){
