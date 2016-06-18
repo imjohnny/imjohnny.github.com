@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Javascript," />
+  <meta name="keywords" content="Html,CSS,盒模型，标准模式," />
 
 
 
@@ -100,36 +100,20 @@
 
 
 
-<meta name="description" content="Day2今天我们来讨论一下js里面的基本数据类型，变量还有函数。
-1.JS里面的基本数据类型
-字符串String，被引号包着的就是字符。
-数字Number，能够参与数学运算。
-布尔Boolean，true or false
-
-2.变量出现的地方，就和值（内容本身）出现是一样的。变量和字符的区别：加了引号就是字符，不加就是变量。变量需要先定义再使用，变量的值，以使用时为准。">
+<meta name="description" content="盒子模型是CSS技术中一个非常重要的概念。掌握盒子模型的原理和使用方法可以极大地丰富HTML元素的表现效果,同时对HTML文档的布局也会起到很大的作用。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript学习笔记-Day2">
-<meta property="og:url" content="https://imjohnny.github.io/2016/05/26/Javascript学习笔记-Day2/index.html">
+<meta property="og:title" content="详解盒模型">
+<meta property="og:url" content="https://imjohnny.github.io/2016/06/18/详解盒模型/index.html">
 <meta property="og:site_name" content="Johnny's NoteBook">
-<meta property="og:description" content="Day2今天我们来讨论一下js里面的基本数据类型，变量还有函数。
-1.JS里面的基本数据类型
-字符串String，被引号包着的就是字符。
-数字Number，能够参与数学运算。
-布尔Boolean，true or false
-
-2.变量出现的地方，就和值（内容本身）出现是一样的。变量和字符的区别：加了引号就是字符，不加就是变量。变量需要先定义再使用，变量的值，以使用时为准。">
-<meta property="og:image" content="https://imjohnny.github.io/uploads/learnDay2.jpg">
-<meta property="og:updated_time" content="2016-05-26T08:41:06.817Z">
+<meta property="og:description" content="盒子模型是CSS技术中一个非常重要的概念。掌握盒子模型的原理和使用方法可以极大地丰富HTML元素的表现效果,同时对HTML文档的布局也会起到很大的作用。">
+<meta property="og:image" content="https://imjohnny.github.io/uploads/boxs.jpg">
+<meta property="og:image" content="https://imjohnny.github.io/uploads/borderbg.jpg">
+<meta property="og:image" content="https://imjohnny.github.io/uploads/boxq.jpg">
+<meta property="og:updated_time" content="2016-06-18T07:51:26.966Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript学习笔记-Day2">
-<meta name="twitter:description" content="Day2今天我们来讨论一下js里面的基本数据类型，变量还有函数。
-1.JS里面的基本数据类型
-字符串String，被引号包着的就是字符。
-数字Number，能够参与数学运算。
-布尔Boolean，true or false
-
-2.变量出现的地方，就和值（内容本身）出现是一样的。变量和字符的区别：加了引号就是字符，不加就是变量。变量需要先定义再使用，变量的值，以使用时为准。">
-<meta name="twitter:image" content="https://imjohnny.github.io/uploads/learnDay2.jpg">
+<meta name="twitter:title" content="详解盒模型">
+<meta name="twitter:description" content="盒子模型是CSS技术中一个非常重要的概念。掌握盒子模型的原理和使用方法可以极大地丰富HTML元素的表现效果,同时对HTML文档的布局也会起到很大的作用。">
+<meta name="twitter:image" content="https://imjohnny.github.io/uploads/boxs.jpg">
 
 
 
@@ -147,7 +131,7 @@
   };
 </script>
 
-  <title> Javascript学习笔记-Day2 | Johnny's NoteBook </title>
+  <title> 详解盒模型 | Johnny's NoteBook </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -310,7 +294,7 @@
             
             
               
-                Javascript学习笔记-Day2
+                详解盒模型
               
             
           </h1>
@@ -322,8 +306,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-26T13:30:49+08:00" content="2016-05-26">
-              2016-05-26
+            <time itemprop="dateCreated" datetime="2016-06-18T14:40:34+08:00" content="2016-06-18">
+              2016-06-18
             </time>
           </span>
 
@@ -352,8 +336,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/26/Javascript学习笔记-Day2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/26/Javascript学习笔记-Day2/" itemprop="commentsCount"></span>
+                <a href="/2016/06/18/详解盒模型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/18/详解盒模型/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -376,31 +360,22 @@
       
 
       
-        <p><img src="/uploads/learnDay2.jpg" alt=""><br>Day2<br>今天我们来讨论一下js里面的基本数据类型，变量还有函数。</p>
-<h2 id="1-JS里面的基本数据类型"><a href="#1-JS里面的基本数据类型" class="headerlink" title="1.JS里面的基本数据类型"></a>1.JS里面的基本数据类型</h2><ul>
-<li>字符串String，被引号包着的就是字符。</li>
-<li>数字Number，能够参与数学运算。</li>
-<li>布尔Boolean，true or false</li>
-</ul>
-<h2 id="2-变量出现的地方，就和值（内容本身）出现是一样的。"><a href="#2-变量出现的地方，就和值（内容本身）出现是一样的。" class="headerlink" title="2.变量出现的地方，就和值（内容本身）出现是一样的。"></a>2.变量出现的地方，就和值（内容本身）出现是一样的。</h2><p><strong>变量和字符的区别：加了引号就是字符，不加就是变量。</strong><br>变量需要先定义再使用，变量的值，以使用时为准。<br><a id="more"></a></p>
-<h2 id="3-函数的定义："><a href="#3-函数的定义：" class="headerlink" title="3.函数的定义："></a>3.函数的定义：</h2><p>包了一段代码，需要的时候拿来直接用。<br><strong>函数在哪里定义并不重要，重要的是在哪里调用</strong></p>
-<h2 id="4-函数的传参："><a href="#4-函数的传参：" class="headerlink" title="4.函数的传参："></a>4.函数的传参：</h2><p>为什么函数需要传参？函数里面有确定不下来的东西时，就需要提供参数。<br>如何传参？<br>调用的时候：函数名（要传的参数）<br>定义的时候：function 函数名（参数）<br>参数可以传递多个，参数之间用逗号隔开</p>
-<h2 id="5-获取属性"><a href="#5-获取属性" class="headerlink" title="5.获取属性"></a>5.获取属性</h2><p>oElement.value/oElement.title   方法1<br>oElement[value]/oElement[title] 方法2<br>当属性不确定时，使用方法2获取属性值。</p>
-<h2 id="6-if判断"><a href="#6-if判断" class="headerlink" title="6.if判断"></a>6.if判断</h2><p>if(条件){代码}                                     1种情况的判断<br>if(条件){代码1}else{代码2}                         2种情况的判断<br>if(条件1){代码1}else if(条件2){代码2}else{代码3}      3种情况的判断<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件<span class="number">1</span>）&#123;<span class="comment">//多种情况</span></span><br><span class="line">    代码<span class="number">1</span></span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(条件<span class="number">2</span>)&#123;        </span><br><span class="line">    代码<span class="number">2</span></span><br><span class="line">...<span class="comment">//else if(条件n)&#123;&#125;--&gt;无限复制</span></span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">    代码n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>else if /else     不是必须的，但是if必不可少</p>
-<h2 id="7-匿名函数："><a href="#7-匿名函数：" class="headerlink" title="7.匿名函数："></a>7.匿名函数：</h2><p>function(){代码};<br>匿名函数就是没有名字的函数。<br><strong>但凡函数名出现的地方，就等于函数本身出现</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var show = function()&#123;alert('abc)&#125;;</span><br><span class="line">show();//abc</span><br></pre></td></tr></table></figure></p>
-<h2 id="8-window-onload"><a href="#8-window-onload" class="headerlink" title="8.window.onload"></a>8.window.onload</h2><p>当窗口内容全部加载完毕时，执行代码。（包括图片等全部加载完毕）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	代码</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h2 id="9-获取一组元素"><a href="#9-获取一组元素" class="headerlink" title="9.获取一组元素"></a>9.获取一组元素</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取一组div元素</span></span><br><span class="line"><span class="keyword">var</span> aDiv=<span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>)；</span><br></pre></td></tr></table></figure>
-<p>这个获取的集合是一个伪数组<br>下标 就是代表是第几个元素 aDiv[下标] eg. aDiv[0]代表第一个元素<br>长度 有多少个元素 length<br>在原生的javascript中一组元素没有办法一起操作。</p>
-<h2 id="10-遍历（循环）"><a href="#10-遍历（循环）" class="headerlink" title="10.遍历（循环）"></a>10.遍历（循环）</h2><p>循环：重复执行一段代码。<br>循环的步骤：</p>
-<ol>
-<li>初始值</li>
-<li>条件</li>
-<li>执行语句</li>
-<li>自增<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//while循环</span></span><br><span class="line"><span class="keyword">var</span> i=<span class="number">0</span>;<span class="comment">//初始化</span></span><br><span class="line"><span class="keyword">while</span>(<span class="comment">//条件)&#123;</span></span><br><span class="line">    <span class="comment">//语句</span></span><br><span class="line">    i++;<span class="comment">//自增</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//for循环</span></span><br><span class="line"><span class="keyword">for</span>(初始化;条件;自增)&#123;</span><br><span class="line">    <span class="comment">//语句</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>盒子模型是CSS技术中一个非常重要的概念。掌握盒子模型的原理和使用方法可以极大地丰富HTML元素的表现效果,同时对HTML文档的布局也会起到很大的作用。<br><a id="more"></a></p>
+<h2 id="1-最基本的标准盒模型"><a href="#1-最基本的标准盒模型" class="headerlink" title="1.最基本的标准盒模型"></a>1.最基本的标准盒模型</h2><p>对于html来说，每个标签元素都可以理解为一个“盒子”。但是一般来说，盒模型主要适用于块级元素。<br>内容(content)、填充(padding)、边框(border)、边界(margin)， CSS盒子模式具备这些属性。<br><img src="/uploads/boxs.jpg" alt=""><br>标准模式下面盒模型的宽度width指的是content的宽度，高度也是如此。</p>
+<p>标准模式下盒子的实际宽度为：<br>width + padding-left + padding-right + border-left-width + border-right-width<br>标准模式下盒子的实际高度为：<br>heigth + padding-top +padding-bottom + border-top-width + border-bottom-width</p>
+<p>内边距出现在内容区域的周围。如果在元素上添加背景，那么背景应用于元素的内容和内边距组成的区域。因此可以用内边距在内容周围创建一个隔离带，使内容不与背景混合在一起。添加边框会在内边距区域外边增加一条线。这些线可以有不同的样式和宽度，如实线、虚线、点画线。在边框外边的是外边距，外边距是透明的，一般使用它控制元素之间的间隔。这个时候你会发现边框同样也是在背景之上的。<br><img src="/uploads/borderbg.jpg" alt=""></p>
+<h2 id="2-什么是标准模式和混杂模式（怪异模式）？"><a href="#2-什么是标准模式和混杂模式（怪异模式）？" class="headerlink" title="2.什么是标准模式和混杂模式（怪异模式）？"></a>2.什么是标准模式和混杂模式（怪异模式）？</h2><p>当浏览器厂商开始创建与标准兼容的浏览器时，他们希望确保向后兼容性。为了实现这一点，他们创建了两种呈现模式：标准模式和混杂模式。<br>在标准模式下浏览器按照规范呈现页面；<br>在混杂模式下，页面以一种比较宽松的向后兼容的方式显示。混杂模式通常模拟老式浏览器的行为以防止老站点无法工作。</p>
+<p><img src="/uploads/boxq.jpg" alt=""><br>混杂模式下盒子的实际宽度为：css中设定的width值，高度为设置的height值。当然在没有设置overflow的情况下，若盒子内容、内边距、或是边框的值较大，会把盒子撑开，实际宽度和高度则大于设定值。</p>
+<h2 id="3-块级元素与行内元素"><a href="#3-块级元素与行内元素" class="headerlink" title="3.块级元素与行内元素"></a>3.块级元素与行内元素</h2><p>在做页面布局的时候,一般会将html元素分为两种，即块级元素和行内元素。</p>
+<ul>
+<li><p>块级元素：块状元素排斥其他元素与其位于同一行，可以设定元素的宽（width）和高（height），块级元素一般是其他元素的容器，可容纳块级元素和行内元素。常见的块级元素有div, p ,h1~h6等。</p>
 </li>
-</ol>
-<h2 id="11-取反"><a href="#11-取反" class="headerlink" title="11.!取反"></a>11.!取反</h2><p>原来的状态取相反值<br>！内容</p>
+<li><p>行内元素：行内元素不可以设置宽（width）和高（height），但可以与其他行内元素位于同一行，行内元素内一般不可以包含块级元素。行内元素的高度一般由元素内部的字体大小决定，宽度由内容的长度控制。常见的行内元素有a, em ,strong等。</p>
+</li>
+</ul>
+<p>当然我们还可以通过样式display属性来改变元素的显示方式。当display的值设为block时，元素将以块级方式呈现；当display值设为inline时，元素将以行内形式呈现。<br>display常用的值是none/block/inline/inline-block</p>
+<h2 id="4-css3属性box-sizing"><a href="#4-css3属性box-sizing" class="headerlink" title="4.css3属性box-sizing"></a>4.css3属性box-sizing</h2><p>box-sizing有两个值一个是content-box，另一个是border-box。<br>content-box： padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即 ( Element width = width + border + padding )<br>此属性表现为标准模式下的盒模型。</p>
+<p>border-box： padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width )<br>此属性表现为怪异模式下的盒模型。 </p>
 
       
     </div>
@@ -422,7 +397,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+            <a href="/tags/Html/" rel="tag">#Html</a>
+          
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
+          
+            <a href="/tags/盒模型，标准模式/" rel="tag">#盒模型，标准模式</a>
           
         </div>
       
@@ -431,17 +410,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/25/Javascript学习笔记-Day1/" rel="next" title="Javascript学习笔记 Day1">
-                <i class="fa fa-chevron-left"></i> Javascript学习笔记 Day1
+              <a href="/2016/06/11/Javascript学习笔记-Day5/" rel="next" title="Javascript学习笔记-Day5">
+                <i class="fa fa-chevron-left"></i> Javascript学习笔记-Day5
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/26/关于数组去重/" rel="prev" title="关于数组去重">
-                关于数组去重 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,8 +465,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/26/Javascript学习笔记-Day2/"
-           data-title="Javascript学习笔记-Day2" data-url="https://imjohnny.github.io/2016/05/26/Javascript学习笔记-Day2/">
+      <div class="ds-thread" data-thread-key="2016/06/18/详解盒模型/"
+           data-title="详解盒模型" data-url="https://imjohnny.github.io/2016/06/18/详解盒模型/">
       </div>
     
   </div>
@@ -609,7 +584,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-JS里面的基本数据类型"><span class="nav-text">1.JS里面的基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-变量出现的地方，就和值（内容本身）出现是一样的。"><span class="nav-text">2.变量出现的地方，就和值（内容本身）出现是一样的。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-函数的定义："><span class="nav-text">3.函数的定义：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-函数的传参："><span class="nav-text">4.函数的传参：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-获取属性"><span class="nav-text">5.获取属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-if判断"><span class="nav-text">6.if判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-匿名函数："><span class="nav-text">7.匿名函数：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-window-onload"><span class="nav-text">8.window.onload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-获取一组元素"><span class="nav-text">9.获取一组元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-遍历（循环）"><span class="nav-text">10.遍历（循环）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-取反"><span class="nav-text">11.!取反</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-最基本的标准盒模型"><span class="nav-text">1.最基本的标准盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-什么是标准模式和混杂模式（怪异模式）？"><span class="nav-text">2.什么是标准模式和混杂模式（怪异模式）？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-块级元素与行内元素"><span class="nav-text">3.块级元素与行内元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-css3属性box-sizing"><span class="nav-text">4.css3属性box-sizing</span></a></li></ol></div>
             
           </div>
         </section>

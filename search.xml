@@ -4,6 +4,28 @@
   
     
     <entry>
+      <title><![CDATA[详解盒模型]]></title>
+      <url>https://imjohnny.github.io/2016/06/18/%E8%AF%A6%E8%A7%A3%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
+      <content type="html"><![CDATA[<p>盒子模型是CSS技术中一个非常重要的概念。掌握盒子模型的原理和使用方法可以极大地丰富HTML元素的表现效果,同时对HTML文档的布局也会起到很大的作用。<br><a id="more"></a></p>
+<h2 id="1-最基本的标准盒模型"><a href="#1-最基本的标准盒模型" class="headerlink" title="1.最基本的标准盒模型"></a>1.最基本的标准盒模型</h2><p>对于html来说，每个标签元素都可以理解为一个“盒子”。但是一般来说，盒模型主要适用于块级元素。<br>内容(content)、填充(padding)、边框(border)、边界(margin)， CSS盒子模式具备这些属性。<br><img src="/uploads/boxs.jpg" alt=""><br>标准模式下面盒模型的宽度width指的是content的宽度，高度也是如此。</p>
+<p>标准模式下盒子的实际宽度为：<br>width + padding-left + padding-right + border-left-width + border-right-width<br>标准模式下盒子的实际高度为：<br>heigth + padding-top +padding-bottom + border-top-width + border-bottom-width</p>
+<p>内边距出现在内容区域的周围。如果在元素上添加背景，那么背景应用于元素的内容和内边距组成的区域。因此可以用内边距在内容周围创建一个隔离带，使内容不与背景混合在一起。添加边框会在内边距区域外边增加一条线。这些线可以有不同的样式和宽度，如实线、虚线、点画线。在边框外边的是外边距，外边距是透明的，一般使用它控制元素之间的间隔。这个时候你会发现边框同样也是在背景之上的。<br><img src="/uploads/borderbg.jpg" alt=""></p>
+<h2 id="2-什么是标准模式和混杂模式（怪异模式）？"><a href="#2-什么是标准模式和混杂模式（怪异模式）？" class="headerlink" title="2.什么是标准模式和混杂模式（怪异模式）？"></a>2.什么是标准模式和混杂模式（怪异模式）？</h2><p>当浏览器厂商开始创建与标准兼容的浏览器时，他们希望确保向后兼容性。为了实现这一点，他们创建了两种呈现模式：标准模式和混杂模式。<br>在标准模式下浏览器按照规范呈现页面；<br>在混杂模式下，页面以一种比较宽松的向后兼容的方式显示。混杂模式通常模拟老式浏览器的行为以防止老站点无法工作。</p>
+<p><img src="/uploads/boxq.jpg" alt=""><br>混杂模式下盒子的实际宽度为：css中设定的width值，高度为设置的height值。当然在没有设置overflow的情况下，若盒子内容、内边距、或是边框的值较大，会把盒子撑开，实际宽度和高度则大于设定值。</p>
+<h2 id="3-块级元素与行内元素"><a href="#3-块级元素与行内元素" class="headerlink" title="3.块级元素与行内元素"></a>3.块级元素与行内元素</h2><p>在做页面布局的时候,一般会将html元素分为两种，即块级元素和行内元素。</p>
+<ul>
+<li><p>块级元素：块状元素排斥其他元素与其位于同一行，可以设定元素的宽（width）和高（height），块级元素一般是其他元素的容器，可容纳块级元素和行内元素。常见的块级元素有div, p ,h1~h6等。</p>
+</li>
+<li><p>行内元素：行内元素不可以设置宽（width）和高（height），但可以与其他行内元素位于同一行，行内元素内一般不可以包含块级元素。行内元素的高度一般由元素内部的字体大小决定，宽度由内容的长度控制。常见的行内元素有a, em ,strong等。</p>
+</li>
+</ul>
+<p>当然我们还可以通过样式display属性来改变元素的显示方式。当display的值设为block时，元素将以块级方式呈现；当display值设为inline时，元素将以行内形式呈现。<br>display常用的值是none/block/inline/inline-block</p>
+<h2 id="4-css3属性box-sizing"><a href="#4-css3属性box-sizing" class="headerlink" title="4.css3属性box-sizing"></a>4.css3属性box-sizing</h2><p>box-sizing有两个值一个是content-box，另一个是border-box。<br>content-box： padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即 ( Element width = width + border + padding )<br>此属性表现为标准模式下的盒模型。</p>
+<p>border-box： padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width )<br>此属性表现为怪异模式下的盒模型。 </p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript学习笔记-Day5]]></title>
       <url>https://imjohnny.github.io/2016/06/11/Javascript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Day5/</url>
       <content type="html"><![CDATA[<p><img src="/uploads/learnDay5.jpg" alt=""><br>Day5<br>经过之前几天的学习，现在我们可以来做个小东西了-双色球选号。<br>双色球规则： 双色球投注区分为红色球号码区和蓝色球号码区，红色球号码区由1-33共三十三个号码组成，蓝色球号码区由1-16共十六个号码组成。投注时选择6个红色球号码和1个蓝色球号码组成一注进行单式投注。<br><a id="more"></a></p>
