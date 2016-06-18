@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Javascript," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -100,18 +100,15 @@
 
 
 
-<meta name="description" content="Day4今天我们一起来聊聊变量、运算符和流程控制。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Javascript学习笔记-Day4">
-<meta property="og:url" content="https://imjohnny.github.io/2016/05/30/Javascript学习笔记-Day4/index.html">
+<meta name="description" content="Math.pow(1.01,365)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Johnny's NoteBook">
+<meta property="og:url" content="https://imjohnny.github.io/categories/学习笔记/Html/index.html">
 <meta property="og:site_name" content="Johnny's NoteBook">
-<meta property="og:description" content="Day4今天我们一起来聊聊变量、运算符和流程控制。">
-<meta property="og:image" content="https://imjohnny.github.io/uploads/learnDay4.jpg">
-<meta property="og:updated_time" content="2016-06-18T07:56:48.486Z">
+<meta property="og:description" content="Math.pow(1.01,365)">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript学习笔记-Day4">
-<meta name="twitter:description" content="Day4今天我们一起来聊聊变量、运算符和流程控制。">
-<meta name="twitter:image" content="https://imjohnny.github.io/uploads/learnDay4.jpg">
+<meta name="twitter:title" content="Johnny's NoteBook">
+<meta name="twitter:description" content="Math.pow(1.01,365)">
 
 
 
@@ -129,7 +126,7 @@
   };
 </script>
 
-  <title> Javascript学习笔记-Day4 | Johnny's NoteBook </title>
+  <title> 分类: Html | Johnny's NoteBook </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -160,7 +157,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,216 +268,47 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                Javascript学习笔记-Day4
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-30T10:25:59+08:00" content="2016-05-30">
-              2016-05-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习笔记/Javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">Javascript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/30/Javascript学习笔记-Day4/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/30/Javascript学习笔记-Day4/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><img src="/uploads/learnDay4.jpg" alt=""><br>Day4<br>今天我们一起来聊聊变量、运算符和流程控制。<br><a id="more"></a></p>
-<h2 id="1-变量的作用域"><a href="#1-变量的作用域" class="headerlink" title="1.变量的作用域"></a>1.变量的作用域</h2><p>所谓作用域就是变量在哪里起作用，可以访问到的区域。<br>变量分为全局变量和局部变量：</p>
-<ul>
-<li>全局变量 函数外的变量，在函数内外都可以访问到。</li>
-<li>局部变量 函数内的变量，只能在函数内才可以访问到。</li>
-</ul>
-<p>从变量作用域就引申出了闭包的概念：子函数可以访问父函数的变量，但是反过来无法访问。</p>
-<h2 id="2-命名规范"><a href="#2-命名规范" class="headerlink" title="2.命名规范"></a>2.命名规范</h2><p>建议类型前缀+首字母大写（路径/作用）<br>比如:oDiv,oUl,aLi等</p>
-<h2 id="3-运算符"><a href="#3-运算符" class="headerlink" title="3.运算符"></a>3.运算符</h2><ol>
-<li>算数运算符：数字类型 +、-、*、/、%</li>
-<li>赋值：=、+=、-=、*=、/=、%=</li>
-<li>比较：返回true/false &lt;，&gt;，&gt;=，&lt;=，==，===，！=，！==</li>
-<li>逻辑：返回true/false<br>与&amp;&amp;、或||、非!<br>表达式 &amp;&amp; 表达式 与符号两边的内容都为真，则返回true<br>表达式 || 表达式 或符号两边的内容有一个是真，返回true<br>!表达式 取反</li>
-</ol>
-<p>表达式的优先级：算数&gt;比较&gt;逻辑&gt;赋值</p>
-<h2 id="4-流程控制"><a href="#4-流程控制" class="headerlink" title="4.流程控制"></a>4.流程控制</h2><ul>
-<li><p>if-else</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(判断条件)&#123;</span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>switch</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">switch(判断条件)&#123;</span><br><span class="line">   case 情况1:</span><br><span class="line">        代码1</span><br><span class="line">        break;//不能省略</span><br><span class="line">   case 情况2:</span><br><span class="line">        代码2</span><br><span class="line">        break;</span><br><span class="line">   ....</span><br><span class="line">   default://默认情况，可以省略</span><br><span class="line">        代码n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>-三目运算<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">条件? 代码<span class="number">1</span>：代码<span class="number">2</span></span><br></pre></td></tr></table></figure></p>
-<p>一般用在以下2种情况：<br>1.条件赋值var b = 条件?条件1:条件2<br>2.两种情况的判断</p>
-<p>break     跳出循环<br>出现在switch里     ==     跳出switch判断<br>出现在循环里     ==     跳出循环<br>continue     跳过此次循环，继续下次循环<br>出现在for     ==     跳过此次循环</p>
-<h2 id="5-什么是真值？什么是假值？"><a href="#5-什么是真值？什么是假值？" class="headerlink" title="5.什么是真值？什么是假值？"></a>5.什么是真值？什么是假值？</h2><p>JS中的真值包括-true 非空字符 非零数字 非空对象<br>假值-false 空字符 0 空对象null undefined NaN</p>
-<h2 id="6-如何获取非行间样式？"><a href="#6-如何获取非行间样式？" class="headerlink" title="6.如何获取非行间样式？"></a>6.如何获取非行间样式？</h2><p>IE低版本下：obj.currentStyle.css属性名<br>Chrome/Firefox/IE高版本：getComputedStyle(obj,false).css属性名<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getStyle=<span class="function"><span class="keyword">function</span>(<span class="params">obj,attr</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> obj.currentStyle?obj.currentStyle[atrr]:getComputedStyle(obj,<span class="literal">false</span>)[attr];</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//currentStyle/getComputed不可以获取复合样式</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="7-随机数的获取"><a href="#7-随机数的获取" class="headerlink" title="7.随机数的获取"></a>7.随机数的获取</h2><p>说到随机数不得不提静态方法Math.random();<br>随机返回一个[0,1)区间的数字。<br>[n,m)固定范围的随机数获取公式：<br><strong>n+Math.random()*(m-n)</strong></p>
-<h2 id="8-eval"><a href="#8-eval" class="headerlink" title="8.eval()"></a>8.eval()</h2><p>eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码。<br>eval(string)<br>简单点来说就是把字符当做代码来执行。</p>
-<h2 id="9-关于函数的返回值"><a href="#9-关于函数的返回值" class="headerlink" title="9.关于函数的返回值"></a>9.关于函数的返回值</h2><p>函数执行完毕，默认返回undefined<br>如果需要函数返回具体的值，使用return 变量/value;<br>一旦return之后：后续的代码不再执行，直接跳出了函数。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件) <span class="keyword">return</span>;<span class="comment">//直接跳出，不执行后续代码</span></span><br></pre></td></tr></table></figure></p>
-
-      
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        Html
+        <small>分类</small>
+      </h2>
     </div>
 
-    <div>
+    
       
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-      
-    </div>
-
-    <div>
-      
+            <a class="post-title-link" href="/2016/06/18/详解盒模型/" itemprop="url">
+              
+                <span itemprop="name">详解盒模型</span>
+              
+            </a>
         
+      </h1>
 
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-06-18T14:40:34+08:00"
+              content="2016-06-18" >
+          06-18
+        </time>
+      </div>
 
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/28/关于prototype、原型链和继承的关系/" rel="next" title="关于prototype、原型链和继承的关系">
-                <i class="fa fa-chevron-left"></i> 关于prototype、原型链和继承的关系
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/02/数组的一些事儿/" rel="prev" title="数组的一些事儿">
-                数组的一些事儿 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+  
 
-      
-    </div>
-  </div>
 
 
           </div>
@@ -488,14 +316,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/05/30/Javascript学习笔记-Day4/"
-           data-title="Javascript学习笔记-Day4" data-url="https://imjohnny.github.io/2016/05/30/Javascript学习笔记-Day4/">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -515,17 +335,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -602,17 +413,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-变量的作用域"><span class="nav-text">1.变量的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-命名规范"><span class="nav-text">2.命名规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-运算符"><span class="nav-text">3.运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-流程控制"><span class="nav-text">4.流程控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-什么是真值？什么是假值？"><span class="nav-text">5.什么是真值？什么是假值？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-如何获取非行间样式？"><span class="nav-text">6.如何获取非行间样式？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-随机数的获取"><span class="nav-text">7.随机数的获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-eval"><span class="nav-text">8.eval()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-关于函数的返回值"><span class="nav-text">9.关于函数的返回值</span></a></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -716,10 +516,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 
