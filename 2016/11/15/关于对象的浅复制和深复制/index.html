@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Javascript,Object," />
 
 
 
@@ -100,15 +100,16 @@
 
 
 
-<meta name="description" content="Math.pow(1.01,365)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Johnny's NoteBook">
-<meta property="og:url" content="https://imjohnny.github.io/archives/page/2/index.html">
+<meta name="description" content="之前面试的时候，面试官问了我第一个技术问题，什么是深复制，用代码实现一下深复制。我一开始有点蒙圈，回答的不怎么好。只能算知道个大概，大家都知道Javascript里面数据类型分为两大类-基本类型和引用数据类型（对象即Object）。如果是基本类型的话，直接赋值就相当于复制了。如果是复杂数据类型的话，一方面是历史原因，当初内存老贵了，另一方面也是为了优化的关系，复制的数据都是赋值的内存地址，也就是说">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于对象的浅复制和深复制">
+<meta property="og:url" content="https://imjohnny.github.io/2016/11/15/关于对象的浅复制和深复制/index.html">
 <meta property="og:site_name" content="Johnny's NoteBook">
-<meta property="og:description" content="Math.pow(1.01,365)">
+<meta property="og:description" content="之前面试的时候，面试官问了我第一个技术问题，什么是深复制，用代码实现一下深复制。我一开始有点蒙圈，回答的不怎么好。只能算知道个大概，大家都知道Javascript里面数据类型分为两大类-基本类型和引用数据类型（对象即Object）。如果是基本类型的话，直接赋值就相当于复制了。如果是复杂数据类型的话，一方面是历史原因，当初内存老贵了，另一方面也是为了优化的关系，复制的数据都是赋值的内存地址，也就是说">
+<meta property="og:updated_time" content="2016-11-15T14:04:13.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Johnny's NoteBook">
-<meta name="twitter:description" content="Math.pow(1.01,365)">
+<meta name="twitter:title" content="关于对象的浅复制和深复制">
+<meta name="twitter:description" content="之前面试的时候，面试官问了我第一个技术问题，什么是深复制，用代码实现一下深复制。我一开始有点蒙圈，回答的不怎么好。只能算知道个大概，大家都知道Javascript里面数据类型分为两大类-基本类型和引用数据类型（对象即Object）。如果是基本类型的话，直接赋值就相当于复制了。如果是复杂数据类型的话，一方面是历史原因，当初内存老贵了，另一方面也是为了优化的关系，复制的数据都是赋值的内存地址，也就是说">
 
 
 
@@ -126,7 +127,7 @@
   };
 </script>
 
-  <title> 归档 | Johnny's NoteBook </title>
+  <title> 关于对象的浅复制和深复制 | Johnny's NoteBook </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -157,7 +158,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,181 +269,175 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 14 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/26/Javascript学习笔记-Day2/" itemprop="url">
-              
-                <span itemprop="name">Javascript学习笔记-Day2</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-26T13:30:49+08:00"
-              content="2016-05-26" >
-          05-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/25/Javascript学习笔记-Day1/" itemprop="url">
-              
-                <span itemprop="name">Javascript学习笔记 Day1</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-25T21:17:33+08:00"
-              content="2016-05-25" >
-          05-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/25/为什么你要写博客/" itemprop="url">
-              
-                <span itemprop="name">为什么你要写博客</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-25T12:02:56+08:00"
-              content="2016-05-25" >
-          05-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/04/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-04T22:12:22+08:00"
-              content="2016-05-04" >
-          05-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-  </nav>
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                关于对象的浅复制和深复制
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-15T19:58:29+08:00" content="2016-11-15">
+              2016-11-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/15/关于对象的浅复制和深复制/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/15/关于对象的浅复制和深复制/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
 
 
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前面试的时候，面试官问了我第一个技术问题，什么是深复制，用代码实现一下深复制。<br>我一开始有点蒙圈，回答的不怎么好。只能算知道个大概，大家都知道Javascript里面数据类型分为两大类-基本类型和引用数据类型（对象即Object）。<br>如果是基本类型的话，直接赋值就相当于复制了。<br>如果是复杂数据类型的话，一方面是历史原因，当初内存老贵了，另一方面也是为了优化的关系，复制的数据都是赋值的内存地址，也就是说都是指向的同一个内存地址，节约内存空间~<br><a id="more"></a></p>
+<h2 id="1-基本类型的复制"><a href="#1-基本类型的复制" class="headerlink" title="1.基本类型的复制"></a>1.基本类型的复制</h2><p>基本类型：字符串、数字、布尔、null、undefined。<br>基本类型的复制，比如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b=a;</span><br><span class="line"><span class="built_in">console</span>.log(b);<span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> b);<span class="comment">//number</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="2-引用类型的复制"><a href="#2-引用类型的复制" class="headerlink" title="2.引用类型的复制"></a>2.引用类型的复制</h2><p>引用类型：对象、数组、函数。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="keyword">var</span> d=c;</span><br><span class="line"><span class="built_in">console</span>.log(d);<span class="comment">//1,2,3</span></span><br><span class="line">d.push(<span class="number">4</span>);</span><br><span class="line"><span class="built_in">console</span>.log(c);<span class="comment">//1,2,3,4</span></span><br></pre></td></tr></table></figure></p>
+<p>可以看到如果修改变量d，那边变量c的内容也会被修改，因为它们都指向同一个内存地址。那么解决这种情况的就是对象的深复制。<br>如果一个复杂数据类型的变量里面又含有另外一个复杂数据类型的变量，这种情况下面最合适的就是递归调用了。<br>深复制简单对象的代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj,type</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> type = type || &#123;&#125;;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> item <span class="keyword">in</span> obj)&#123;</span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">typeof</span> obj[item]===<span class="string">'object'</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(obj[item].constructor===<span class="built_in">Array</span>)&#123;</span><br><span class="line">				type[item]=[];</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				type[item]=&#123;&#125;;</span><br><span class="line">			&#125;</span><br><span class="line">			deepCopy(obj[item],type[item]);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			type[item]=obj[item];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> type;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+          
+            <a href="/tags/Object/" rel="tag">#Object</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/12/Javascript正则表达式详解/" rel="next" title="Javascript正则表达式详解">
+                <i class="fa fa-chevron-left"></i> Javascript正则表达式详解
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -450,6 +445,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/15/关于对象的浅复制和深复制/"
+           data-title="关于对象的浅复制和深复制" data-url="https://imjohnny.github.io/2016/11/15/关于对象的浅复制和深复制/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -469,8 +472,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -547,6 +559,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本类型的复制"><span class="nav-text">1.基本类型的复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-引用类型的复制"><span class="nav-text">2.引用类型的复制</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -650,11 +673,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
